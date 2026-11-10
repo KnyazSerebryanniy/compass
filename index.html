@@ -285,23 +285,22 @@
       align-self: stretch;
     }
     #searchWrap {
-      width: auto;
+      width: calc(100% - 32px);
       max-width: 400px;
-      margin: 0 16px 6px;
+      margin: 0 auto 6px;
     }
     #settingsPanel { width: min(300px, calc(100vw - 32px)); }
   }
   @media (max-width: 700px) {
-    #searchWrap { margin: 0 12px 12px; max-width: none; }
+    #searchWrap { width: auto; margin: 0 12px 12px; max-width: none; }
     #searchInput { font-size: 16px; }
     .axis-label { font-size: 24px; }
     #points circle.pt { r: 5.5px; }
-    #points .lbl text { font-size: 23px; }
+    #points .lbl text { font-size: 18px; }
     #infoPanel { margin: 0 10px; padding: 14px 16px; }
     #infoPanel h3 { font-size: 16px; }
     #infoPanel p { font-size: 15px; }
     #layerToggle .tgl-btn { padding: 0 11px; }
-    #presetMenu { max-height: 140px; overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; }
   }
 
   /* ===== Пресеты ===== */
@@ -316,6 +315,7 @@
     background: #e2d9c4; border: 1px solid #8B3A2F; border-radius: 12px; padding: 6px;
     box-shadow: 0 6px 18px rgba(43,38,32,0.25); z-index: 60; display: block;
     font-family: Georgia, serif; font-size: 14px;
+    max-height: 140px; overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch;
     opacity: 0; visibility: hidden; pointer-events: none;
     transform: translateY(10px) scale(.96); transform-origin: left bottom;
     transition: opacity .22s ease, transform .26s cubic-bezier(.2,.8,.2,1), visibility 0s linear .26s;
