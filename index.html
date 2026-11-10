@@ -278,11 +278,11 @@
       flex-shrink: 1;
     }
     #infoPanel {
-      width: auto;
+      width: calc(100% - 24px);
       min-height: 0;
       max-width: 720px;
-      margin: 0 12px;
-      align-self: stretch;
+      margin: 0 auto;
+      align-self: center;
     }
     #searchWrap {
       width: calc(100% - 32px);
@@ -297,7 +297,7 @@
     .axis-label { font-size: 24px; }
     #points circle.pt { r: 5.5px; }
     #points .lbl text { font-size: 18px; }
-    #infoPanel { margin: 0 10px; padding: 14px 16px; }
+    #infoPanel { width: calc(100% - 20px); margin: 0 auto; padding: 14px 16px; }
     #infoPanel h3 { font-size: 16px; }
     #infoPanel p { font-size: 15px; }
     #layerToggle .tgl-btn { padding: 0 11px; }
